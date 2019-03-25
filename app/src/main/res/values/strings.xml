@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">HCI-A3</string>
+    <string name="cmd_txtview">command_here</string>
+    <string name="A_btn">A</string>
+    <string name="B_btn">B</string>
+    <string name="C_btn">C</string>
+    <string name="D_btn">D</string>
+    <string name="E_Btn">E</string>
+    <string name="F_btn">F</string>
+    <string name="G_btn">G</string>
 </resources>

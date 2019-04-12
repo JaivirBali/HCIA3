@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.graphics.*;
 import java.util.Calendar;
 import java.util.Date;
+import java.time.*;
 import java.util.Random;
 
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private int smallTrials = 0;
     private int mediumTrials = 0;
     private int largeTrials = 0;
+    private int errorTrial = 0;
     private Date trialStartTime;
     private DialogHandler dialogHandler;
 
@@ -434,9 +436,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void startTrial(View view){
         //record start time
-        trialStartTime = Calendar.getInstance().getTime();
+        //trialStartTime = Calendar.getInstance().getTime();
         setRandomActiveButton();
         System.out.println(trialStartTime);
+    }
+
+    public void endTrial(View view){
+        //Date trailEndTime = Calendar.getInstance().getTime();
+        //if button is the curr active button
+        if(view.getId() == currActiveButton.getId()){
+            //Date = trailEndTime - trialStartTime;
+
+        //else record as error trial
+        }else{
+            errorTrial++;
+        }
+        // reset the curr active button
+
     }
 
     @Override

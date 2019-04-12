@@ -1582,6 +1582,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="180dp"
         android:text="L96"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1591,6 +1592,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="240dp"
         android:text="L97"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1600,6 +1602,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="300dp"
         android:text="L98"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1609,6 +1612,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="360dp"
         android:text="L99"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

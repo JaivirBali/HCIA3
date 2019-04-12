@@ -463,6 +463,7 @@ public class MainActivity extends AppCompatActivity {
 
         //else record as error trial
         }else{
+            Log.print("ERROR TRIAL");
             errorTrial++;
         }
         // reset the curr active button

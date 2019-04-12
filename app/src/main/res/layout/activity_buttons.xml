@@ -12,6 +12,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="120dp"
         android:text="M1"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,6 +23,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="120dp"
         android:text="M2"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,6 +34,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="120dp"
         android:text="M3"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,6 +45,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="120dp"
         android:text="M4"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,6 +56,7 @@
         android:layout_marginStart="184dp"
         android:layout_marginTop="120dp"
         android:text="M5"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,6 +67,7 @@
         android:layout_marginStart="228dp"
         android:layout_marginTop="120dp"
         android:text="M6"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,6 +78,7 @@
         android:layout_marginStart="272dp"
         android:layout_marginTop="120dp"
         android:text="M7"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,6 +89,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="120dp"
         android:text="M8"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,6 +100,7 @@
         android:layout_marginStart="360dp"
         android:layout_marginTop="120dp"
         android:text="M9"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,6 +111,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="160dp"
         android:text="M10"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -112,6 +122,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="160dp"
         android:text="M11"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -122,6 +133,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="160dp"
         android:text="M12"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -132,6 +144,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="160dp"
         android:text="M13"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -142,6 +155,7 @@
         android:layout_marginStart="184dp"
         android:layout_marginTop="160dp"
         android:text="M14"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -152,6 +166,7 @@
         android:layout_marginStart="228dp"
         android:layout_marginTop="160dp"
         android:text="M15"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -162,6 +177,7 @@
         android:layout_marginStart="272dp"
         android:layout_marginTop="160dp"
         android:text="M16"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -172,6 +188,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="160dp"
         android:text="M17"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -182,6 +199,7 @@
         android:layout_marginStart="360dp"
         android:layout_marginTop="160dp"
         android:text="M18"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -192,6 +210,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="408dp"
         android:text="M19"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -202,6 +221,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="408dp"
         android:text="M20"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -212,6 +232,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="408dp"
         android:text="M21"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -222,6 +243,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="408dp"
         android:text="M22"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -232,6 +254,7 @@
         android:layout_marginStart="184dp"
         android:layout_marginTop="408dp"
         android:text="M23"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -242,6 +265,7 @@
         android:layout_marginStart="228dp"
         android:layout_marginTop="408dp"
         android:text="M24"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -252,6 +276,7 @@
         android:layout_marginStart="272dp"
         android:layout_marginTop="408dp"
         android:text="M25"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -262,6 +287,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="408dp"
         android:text="M26"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -272,6 +298,7 @@
         android:layout_marginStart="360dp"
         android:layout_marginTop="408dp"
         android:text="M27"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -282,6 +309,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="448dp"
         android:text="M28"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -292,6 +320,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="448dp"
         android:text="M29"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -302,6 +331,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="448dp"
         android:text="M30"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -312,6 +342,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="448dp"
         android:text="M31"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -322,6 +353,7 @@
         android:layout_marginStart="184dp"
         android:layout_marginTop="448dp"
         android:text="M32"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -332,6 +364,7 @@
         android:layout_marginStart="228dp"
         android:layout_marginTop="448dp"
         android:text="M33"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -342,6 +375,7 @@
         android:layout_marginStart="272dp"
         android:layout_marginTop="448dp"
         android:text="M34"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -352,6 +386,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="448dp"
         android:text="M35"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -362,121 +397,10 @@
         android:layout_marginStart="360dp"
         android:layout_marginTop="448dp"
         android:text="M36"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--
-    <Button
-        android:id="@+id/Btn37"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="356dp"
-        android:layout_marginTop="632dp"
-        android:text="M37"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn38"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="652dp"
-        android:text="M38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn39"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="692dp"
-        android:text="M39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn40"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="648dp"
-        android:text="M40"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn41"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="648dp"
-        android:text="M41"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn42"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="664dp"
-        android:text="M42"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn43"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="652dp"
-        android:text="M43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn44"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="648dp"
-        android:text="M44"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn45"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="664dp"
-        android:text="M45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn46"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="336dp"
-        android:layout_marginTop="680dp"
-        android:text="M46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Btn47"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="600dp"
-        android:text="M47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    -->
     <!-- START OF SMALL BUTTONS
     ***************************************************************************-->
 
@@ -488,6 +412,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="204dp"
         android:text="1"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -498,6 +423,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="204dp"
         android:text="2"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -508,6 +434,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="204dp"
         android:text="3"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -518,6 +445,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="204dp"
         android:text="4"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -528,6 +456,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="204dp"
         android:text="5"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -538,6 +467,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="204dp"
         android:text="6"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -548,6 +478,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="204dp"
         android:text="7"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -558,6 +489,7 @@
         android:layout_marginStart="204dp"
         android:layout_marginTop="204dp"
         android:text="8"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -568,6 +500,7 @@
         android:layout_marginStart="232dp"
         android:layout_marginTop="204dp"
         android:text="9"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -578,6 +511,7 @@
         android:layout_marginStart="260dp"
         android:layout_marginTop="204dp"
         android:text="10"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -588,6 +522,7 @@
         android:layout_marginStart="288dp"
         android:layout_marginTop="204dp"
         android:text="11"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -598,6 +533,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="204dp"
         android:text="12"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -608,6 +544,7 @@
         android:layout_marginStart="344dp"
         android:layout_marginTop="204dp"
         android:text="13"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -618,6 +555,7 @@
         android:layout_marginStart="372dp"
         android:layout_marginTop="204dp"
         android:text="14"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -628,6 +566,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="232dp"
         android:text="15"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -638,6 +577,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="232dp"
         android:text="16"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -648,6 +588,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="232dp"
         android:text="17"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -658,6 +599,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="232dp"
         android:text="18"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -668,6 +610,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="232dp"
         android:text="19"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -678,6 +621,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="232dp"
         android:text="20"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -688,6 +632,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="232dp"
         android:text="21"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -698,6 +643,7 @@
         android:layout_marginStart="204dp"
         android:layout_marginTop="232dp"
         android:text="22"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -708,6 +654,7 @@
         android:layout_marginStart="232dp"
         android:layout_marginTop="232dp"
         android:text="23"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -718,6 +665,7 @@
         android:layout_marginStart="260dp"
         android:layout_marginTop="232dp"
         android:text="24"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -728,6 +676,7 @@
         android:layout_marginStart="288dp"
         android:layout_marginTop="232dp"
         android:text="25"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -738,6 +687,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="232dp"
         android:text="26"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -748,6 +698,7 @@
         android:layout_marginStart="344dp"
         android:layout_marginTop="232dp"
         android:text="27"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -758,6 +709,7 @@
         android:layout_marginStart="372dp"
         android:layout_marginTop="232dp"
         android:text="28"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -768,6 +720,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="260dp"
         android:text="29"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -778,6 +731,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="260dp"
         android:text="30"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -788,6 +742,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="260dp"
         android:text="31"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -798,6 +753,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="260dp"
         android:text="32"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -808,6 +764,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="260dp"
         android:text="33"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -818,6 +775,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="260dp"
         android:text="34"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -828,6 +786,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="260dp"
         android:text="35"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -838,6 +797,7 @@
         android:layout_marginStart="204dp"
         android:layout_marginTop="260dp"
         android:text="36"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -848,6 +808,7 @@
         android:layout_marginStart="232dp"
         android:layout_marginTop="260dp"
         android:text="37"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -858,6 +819,7 @@
         android:layout_marginStart="260dp"
         android:layout_marginTop="260dp"
         android:text="38"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -868,6 +830,7 @@
         android:layout_marginStart="288dp"
         android:layout_marginTop="260dp"
         android:text="39"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -878,6 +841,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="260dp"
         android:text="40"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -888,6 +852,7 @@
         android:layout_marginStart="344dp"
         android:layout_marginTop="260dp"
         android:text="41"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -898,6 +863,7 @@
         android:layout_marginStart="372dp"
         android:layout_marginTop="260dp"
         android:text="42"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -908,6 +874,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="492dp"
         android:text="43"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -918,6 +885,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="492dp"
         android:text="44"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -928,6 +896,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="492dp"
         android:text="45"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -938,6 +907,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="492dp"
         android:text="46"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -948,6 +918,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="492dp"
         android:text="47"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -958,6 +929,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="492dp"
         android:text="48"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -968,6 +940,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="492dp"
         android:text="49"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -978,6 +951,7 @@
         android:layout_marginStart="204dp"
         android:layout_marginTop="492dp"
         android:text="50"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -988,6 +962,7 @@
         android:layout_marginStart="232dp"
         android:layout_marginTop="492dp"
         android:text="51"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -998,6 +973,7 @@
         android:layout_marginStart="260dp"
         android:layout_marginTop="492dp"
         android:text="52"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1008,6 +984,7 @@
         android:layout_marginStart="288dp"
         android:layout_marginTop="492dp"
         android:text="53"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1018,6 +995,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="492dp"
         android:text="54"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1028,6 +1006,7 @@
         android:layout_marginStart="344dp"
         android:layout_marginTop="492dp"
         android:text="55"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1038,6 +1017,7 @@
         android:layout_marginStart="372dp"
         android:layout_marginTop="492dp"
         android:text="56"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1048,6 +1028,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="520dp"
         android:text="57"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1058,6 +1039,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="520dp"
         android:text="58"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1068,6 +1050,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="520dp"
         android:text="59"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1078,6 +1061,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="520dp"
         android:text="60"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1088,6 +1072,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="520dp"
         android:text="61"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1098,6 +1083,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="520dp"
         android:text="62"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1108,6 +1094,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="520dp"
         android:text="63"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1118,6 +1105,7 @@
         android:layout_marginStart="204dp"
         android:layout_marginTop="520dp"
         android:text="64"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1128,6 +1116,7 @@
         android:layout_marginStart="232dp"
         android:layout_marginTop="520dp"
         android:text="65"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1138,6 +1127,7 @@
         android:layout_marginStart="260dp"
         android:layout_marginTop="520dp"
         android:text="66"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1148,6 +1138,7 @@
         android:layout_marginStart="288dp"
         android:layout_marginTop="520dp"
         android:text="67"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1158,6 +1149,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="520dp"
         android:text="68"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1168,6 +1160,7 @@
         android:layout_marginStart="344dp"
         android:layout_marginTop="520dp"
         android:text="69"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1178,6 +1171,7 @@
         android:layout_marginStart="372dp"
         android:layout_marginTop="520dp"
         android:text="70"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1188,6 +1182,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="548dp"
         android:text="71"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1198,6 +1193,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="548dp"
         android:text="72"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1208,6 +1204,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="548dp"
         android:text="73"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1218,6 +1215,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="548dp"
         android:text="74"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1228,6 +1226,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="548dp"
         android:text="75"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1238,6 +1237,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="548dp"
         android:text="76"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1248,6 +1248,7 @@
         android:layout_marginStart="176dp"
         android:layout_marginTop="548dp"
         android:text="77"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1258,6 +1259,7 @@
         android:layout_marginStart="204dp"
         android:layout_marginTop="548dp"
         android:text="78"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1268,6 +1270,7 @@
         android:layout_marginStart="232dp"
         android:layout_marginTop="548dp"
         android:text="79"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1278,6 +1281,7 @@
         android:layout_marginStart="288dp"
         android:layout_marginTop="548dp"
         android:text="81"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1288,6 +1292,7 @@
         android:layout_marginStart="316dp"
         android:layout_marginTop="548dp"
         android:text="82"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1298,6 +1303,7 @@
         android:layout_marginStart="260dp"
         android:layout_marginTop="548dp"
         android:text="80"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1308,6 +1314,7 @@
         android:layout_marginStart="344dp"
         android:layout_marginTop="548dp"
         android:text="83"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1318,6 +1325,7 @@
         android:layout_marginStart="372dp"
         android:layout_marginTop="548dp"
         android:text="84"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1349,6 +1357,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="348dp"
         android:text="L72"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1359,6 +1368,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="348dp"
         android:text="L73"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1369,6 +1379,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="348dp"
         android:text="L74"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1379,6 +1390,7 @@
         android:layout_marginStart="180dp"
         android:layout_marginTop="348dp"
         android:text="L75"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1389,6 +1401,7 @@
         android:layout_marginStart="240dp"
         android:layout_marginTop="348dp"
         android:text="L76"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1399,6 +1412,7 @@
         android:layout_marginStart="300dp"
         android:layout_marginTop="348dp"
         android:text="L77"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1409,6 +1423,7 @@
         android:layout_marginStart="360dp"
         android:layout_marginTop="348dp"
         android:text="L78"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1418,6 +1433,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="288dp"
         android:text="L79"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1428,6 +1444,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="288dp"
         android:text="L80"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1438,6 +1455,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="288dp"
         android:text="L81"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1448,6 +1466,7 @@
         android:layout_marginStart="180dp"
         android:layout_marginTop="288dp"
         android:text="L82"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1458,6 +1477,7 @@
         android:layout_marginStart="240dp"
         android:layout_marginTop="288dp"
         android:text="L83"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1468,6 +1488,7 @@
         android:layout_marginStart="300dp"
         android:layout_marginTop="288dp"
         android:text="L84"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1478,6 +1499,7 @@
         android:layout_marginStart="360dp"
         android:layout_marginTop="288dp"
         android:text="L85"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1487,6 +1509,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="60dp"
         android:text="L86"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1497,6 +1520,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="60dp"
         android:text="L87"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1507,6 +1531,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="60dp"
         android:text="L88"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1517,6 +1542,7 @@
         android:layout_marginStart="180dp"
         android:layout_marginTop="60dp"
         android:text="L89"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1527,6 +1553,7 @@
         android:layout_marginStart="240dp"
         android:layout_marginTop="60dp"
         android:text="L90"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1537,6 +1564,7 @@
         android:layout_marginStart="300dp"
         android:layout_marginTop="60dp"
         android:text="L91"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1547,6 +1575,7 @@
         android:layout_marginStart="360dp"
         android:layout_marginTop="60dp"
         android:text="L92"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1555,6 +1584,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:text="L93"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1564,6 +1594,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="60dp"
         android:text="L94"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -1573,6 +1604,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="120dp"
         android:text="L95"
+        android:onClick="endTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

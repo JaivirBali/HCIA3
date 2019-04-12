@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.graphics.*;
 import java.math.*;
+import java.util.Random;
 
 import java.util.ArrayList;
 
@@ -48,26 +49,44 @@ public class MainActivity extends AppCompatActivity {
 
     public void setRandomActiveButton(){
         //pick a random size group
-
-
-        //if that size group has less trials than NUM_TRIALS, find a random button in that group
-
-        //else pick a different size group
-
+        int random = new Random().nextInt(3);
+        switch(random){
+            case 0:
+                if(smallTrials < NUM_TRIALS){
+                    setRandomSmallButton();
+                }else {
+                    setRandomActiveButton();
+                }
+                break;
+            case 1:
+                if(mediumTrials < NUM_TRIALS){
+                    setRandomMediumButton();
+                }else {
+                    setRandomActiveButton();
+                }
+                break;
+            case 2:
+                if(largeTrials < NUM_TRIALS){
+                    setRandomLargeButton();
+                }else {
+                    setRandomActiveButton();
+                }
+                break;
+        }
     }
 
     public void setRandomSmallButton(){
-        Button b = smallButtonsAR.get((int)(Math.random()*smallButtonsAR.size()));
+        Button b = smallButtonsAR.get( new Random().nextInt(smallButtonsAR.size()));
         setCurrActiveButton(b);
     }
 
     public void setRandomMediumButton(){
-        Button b = mediumButtonsAR.get((int)(Math.random()*mediumButtonsAR.size()));
+        Button b = mediumButtonsAR.get(new Random().nextInt(mediumButtonsAR.size()));
         setCurrActiveButton(b);
     }
 
     public void setRandomLargeButton(){
-        Button b = largeButtonsAR.get((int)(Math.random()*largeButtonsAR.size()));
+        Button b = largeButtonsAR.get(new Random().nextInt(largeButtonsAR.size()));
         setCurrActiveButton(b);
     }
 
@@ -201,42 +220,42 @@ public class MainActivity extends AppCompatActivity {
         Button M35button = findViewById(R.id.Btn35);
         Button M36button = findViewById(R.id.Btn36);
 
-        largeButtonsAR.add(M1button);
-        largeButtonsAR.add(M2button);
-        largeButtonsAR.add(M3button);
-        largeButtonsAR.add(M4button);
-        largeButtonsAR.add(M5button);
-        largeButtonsAR.add(M6button);
-        largeButtonsAR.add(M7button);
-        largeButtonsAR.add(M8button);
-        largeButtonsAR.add(M9button);
-        largeButtonsAR.add(M10button);
-        largeButtonsAR.add(M11button);
-        largeButtonsAR.add(M12button);
-        largeButtonsAR.add(M13button);
-        largeButtonsAR.add(M14button);
-        largeButtonsAR.add(M15button);
-        largeButtonsAR.add(M16button);
-        largeButtonsAR.add(M17button);
-        largeButtonsAR.add(M18button);
-        largeButtonsAR.add(M19button);
-        largeButtonsAR.add(M20button);
-        largeButtonsAR.add(M21button);
-        largeButtonsAR.add(M22button);
-        largeButtonsAR.add(M23button);
-        largeButtonsAR.add(M24button);
-        largeButtonsAR.add(M25button);
-        largeButtonsAR.add(M26button);
-        largeButtonsAR.add(M27button);
-        largeButtonsAR.add(M28button);
-        largeButtonsAR.add(M29button);
-        largeButtonsAR.add(M30button);
-        largeButtonsAR.add(M31button);
-        largeButtonsAR.add(M32button);
-        largeButtonsAR.add(M33button);
-        largeButtonsAR.add(M34button);
-        largeButtonsAR.add(M35button);
-        largeButtonsAR.add(M36button);
+        mediumButtonsAR.add(M1button);
+        mediumButtonsAR.add(M2button);
+        mediumButtonsAR.add(M3button);
+        mediumButtonsAR.add(M4button);
+        mediumButtonsAR.add(M5button);
+        mediumButtonsAR.add(M6button);
+        mediumButtonsAR.add(M7button);
+        mediumButtonsAR.add(M8button);
+        mediumButtonsAR.add(M9button);
+        mediumButtonsAR.add(M10button);
+        mediumButtonsAR.add(M11button);
+        mediumButtonsAR.add(M12button);
+        mediumButtonsAR.add(M13button);
+        mediumButtonsAR.add(M14button);
+        mediumButtonsAR.add(M15button);
+        mediumButtonsAR.add(M16button);
+        mediumButtonsAR.add(M17button);
+        mediumButtonsAR.add(M18button);
+        mediumButtonsAR.add(M19button);
+        mediumButtonsAR.add(M20button);
+        mediumButtonsAR.add(M21button);
+        mediumButtonsAR.add(M22button);
+        mediumButtonsAR.add(M23button);
+        mediumButtonsAR.add(M24button);
+        mediumButtonsAR.add(M25button);
+        mediumButtonsAR.add(M26button);
+        mediumButtonsAR.add(M27button);
+        mediumButtonsAR.add(M28button);
+        mediumButtonsAR.add(M29button);
+        mediumButtonsAR.add(M30button);
+        mediumButtonsAR.add(M31button);
+        mediumButtonsAR.add(M32button);
+        mediumButtonsAR.add(M33button);
+        mediumButtonsAR.add(M34button);
+        mediumButtonsAR.add(M35button);
+        mediumButtonsAR.add(M36button);
 
         Button S1button = findViewById(R.id.sBtn1);
         Button S2button = findViewById(R.id.sBtn2);
@@ -323,90 +342,90 @@ public class MainActivity extends AppCompatActivity {
         Button S83button = findViewById(R.id.sBtn83);
         Button S84button = findViewById(R.id.sBtn84);
 
-        largeButtonsAR.add(S1button);
-        largeButtonsAR.add(S2button);
-        largeButtonsAR.add(S3button);
-        largeButtonsAR.add(S4button);
-        largeButtonsAR.add(S5button);
-        largeButtonsAR.add(S6button);
-        largeButtonsAR.add(S7button);
-        largeButtonsAR.add(S8button);
-        largeButtonsAR.add(S9button);
-        largeButtonsAR.add(S10button);
-        largeButtonsAR.add(S11button);
-        largeButtonsAR.add(S12button);
-        largeButtonsAR.add(S13button);
-        largeButtonsAR.add(S14button);
-        largeButtonsAR.add(S15button);
-        largeButtonsAR.add(S16button);
-        largeButtonsAR.add(S17button);
-        largeButtonsAR.add(S18button);
-        largeButtonsAR.add(S19button);
-        largeButtonsAR.add(S20button);
-        largeButtonsAR.add(S21button);
-        largeButtonsAR.add(S22button);
-        largeButtonsAR.add(S23button);
-        largeButtonsAR.add(S24button);
-        largeButtonsAR.add(S25button);
-        largeButtonsAR.add(S26button);
-        largeButtonsAR.add(S27button);
-        largeButtonsAR.add(S28button);
-        largeButtonsAR.add(S29button);
-        largeButtonsAR.add(S30button);
-        largeButtonsAR.add(S31button);
-        largeButtonsAR.add(S32button);
-        largeButtonsAR.add(S33button);
-        largeButtonsAR.add(S34button);
-        largeButtonsAR.add(S35button);
-        largeButtonsAR.add(S36button);
-        largeButtonsAR.add(S37button);
-        largeButtonsAR.add(S38button);
-        largeButtonsAR.add(S39button);
-        largeButtonsAR.add(S40button);
-        largeButtonsAR.add(S41button);
-        largeButtonsAR.add(S42button);
-        largeButtonsAR.add(S43button);
-        largeButtonsAR.add(S44button);
-        largeButtonsAR.add(S45button);
-        largeButtonsAR.add(S46button);
-        largeButtonsAR.add(S47button);
-        largeButtonsAR.add(S48button);
-        largeButtonsAR.add(S49button);
-        largeButtonsAR.add(S50button);
-        largeButtonsAR.add(S51button);
-        largeButtonsAR.add(S52button);
-        largeButtonsAR.add(S53button);
-        largeButtonsAR.add(S54button);
-        largeButtonsAR.add(S55button);
-        largeButtonsAR.add(S56button);
-        largeButtonsAR.add(S57button);
-        largeButtonsAR.add(S58button);
-        largeButtonsAR.add(S59button);
-        largeButtonsAR.add(S60button);
-        largeButtonsAR.add(S61button);
-        largeButtonsAR.add(S62button);
-        largeButtonsAR.add(S63button);
-        largeButtonsAR.add(S64button);
-        largeButtonsAR.add(S65button);
-        largeButtonsAR.add(S66button);
-        largeButtonsAR.add(S67button);
-        largeButtonsAR.add(S68button);
-        largeButtonsAR.add(S69button);
-        largeButtonsAR.add(S70button);
-        largeButtonsAR.add(S71button);
-        largeButtonsAR.add(S72button);
-        largeButtonsAR.add(S73button);
-        largeButtonsAR.add(S74button);
-        largeButtonsAR.add(S75button);
-        largeButtonsAR.add(S76button);
-        largeButtonsAR.add(S77button);
-        largeButtonsAR.add(S78button);
-        largeButtonsAR.add(S79button);
-        largeButtonsAR.add(S80button);
-        largeButtonsAR.add(S81button);
-        largeButtonsAR.add(S82button);
-        largeButtonsAR.add(S83button);
-        largeButtonsAR.add(S84button);
+        smallButtonsAR.add(S1button);
+        smallButtonsAR.add(S2button);
+        smallButtonsAR.add(S3button);
+        smallButtonsAR.add(S4button);
+        smallButtonsAR.add(S5button);
+        smallButtonsAR.add(S6button);
+        smallButtonsAR.add(S7button);
+        smallButtonsAR.add(S8button);
+        smallButtonsAR.add(S9button);
+        smallButtonsAR.add(S10button);
+        smallButtonsAR.add(S11button);
+        smallButtonsAR.add(S12button);
+        smallButtonsAR.add(S13button);
+        smallButtonsAR.add(S14button);
+        smallButtonsAR.add(S15button);
+        smallButtonsAR.add(S16button);
+        smallButtonsAR.add(S17button);
+        smallButtonsAR.add(S18button);
+        smallButtonsAR.add(S19button);
+        smallButtonsAR.add(S20button);
+        smallButtonsAR.add(S21button);
+        smallButtonsAR.add(S22button);
+        smallButtonsAR.add(S23button);
+        smallButtonsAR.add(S24button);
+        smallButtonsAR.add(S25button);
+        smallButtonsAR.add(S26button);
+        smallButtonsAR.add(S27button);
+        smallButtonsAR.add(S28button);
+        smallButtonsAR.add(S29button);
+        smallButtonsAR.add(S30button);
+        smallButtonsAR.add(S31button);
+        smallButtonsAR.add(S32button);
+        smallButtonsAR.add(S33button);
+        smallButtonsAR.add(S34button);
+        smallButtonsAR.add(S35button);
+        smallButtonsAR.add(S36button);
+        smallButtonsAR.add(S37button);
+        smallButtonsAR.add(S38button);
+        smallButtonsAR.add(S39button);
+        smallButtonsAR.add(S40button);
+        smallButtonsAR.add(S41button);
+        smallButtonsAR.add(S42button);
+        smallButtonsAR.add(S43button);
+        smallButtonsAR.add(S44button);
+        smallButtonsAR.add(S45button);
+        smallButtonsAR.add(S46button);
+        smallButtonsAR.add(S47button);
+        smallButtonsAR.add(S48button);
+        smallButtonsAR.add(S49button);
+        smallButtonsAR.add(S50button);
+        smallButtonsAR.add(S51button);
+        smallButtonsAR.add(S52button);
+        smallButtonsAR.add(S53button);
+        smallButtonsAR.add(S54button);
+        smallButtonsAR.add(S55button);
+        smallButtonsAR.add(S56button);
+        smallButtonsAR.add(S57button);
+        smallButtonsAR.add(S58button);
+        smallButtonsAR.add(S59button);
+        smallButtonsAR.add(S60button);
+        smallButtonsAR.add(S61button);
+        smallButtonsAR.add(S62button);
+        smallButtonsAR.add(S63button);
+        smallButtonsAR.add(S64button);
+        smallButtonsAR.add(S65button);
+        smallButtonsAR.add(S66button);
+        smallButtonsAR.add(S67button);
+        smallButtonsAR.add(S68button);
+        smallButtonsAR.add(S69button);
+        smallButtonsAR.add(S70button);
+        smallButtonsAR.add(S71button);
+        smallButtonsAR.add(S72button);
+        smallButtonsAR.add(S73button);
+        smallButtonsAR.add(S74button);
+        smallButtonsAR.add(S75button);
+        smallButtonsAR.add(S76button);
+        smallButtonsAR.add(S77button);
+        smallButtonsAR.add(S78button);
+        smallButtonsAR.add(S79button);
+        smallButtonsAR.add(S80button);
+        smallButtonsAR.add(S81button);
+        smallButtonsAR.add(S82button);
+        smallButtonsAR.add(S83button);
+        smallButtonsAR.add(S84button);
 
         start();
     }

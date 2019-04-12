@@ -1,5 +1,6 @@
 package com.example.hci_a3;
 
+import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,17 +23,29 @@ public class MainActivity extends AppCompatActivity {
     private int smallTrials = 0;
     private int mediumTrials = 0;
     private int largeTrials = 0;
+    private DialogHandler dialogHandler;
 
-    public int getSmallTrials(){return smallTrials;}
-    public int getMediumTrials(){return mediumTrials;}
-    public int getLargeTrials(){return largeTrials;}
+    public int getSmallTrials(){
+        return smallTrials;
+    }
+
+    public int getMediumTrials(){
+        return mediumTrials;
+    }
+
+    public int getLargeTrials(){
+        return largeTrials;
+    }
+
     public Button getCurrActiveButton() {
         return currActiveButton;
     }
+
     public void setCurrActiveButton(Button b) {
         currActiveButton = b;
         currActiveButton.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
     }
+
     public void setRandomActiveButton(){
         //pick a random size group
 
@@ -42,14 +55,17 @@ public class MainActivity extends AppCompatActivity {
         //else pick a different size group
 
     }
+
     public void setRandomSmallButton(){
         Button b = smallButtonsAR.get((int)(Math.random()*smallButtonsAR.size()));
         setCurrActiveButton(b);
     }
+
     public void setRandomMediumButton(){
         Button b = mediumButtonsAR.get((int)(Math.random()*mediumButtonsAR.size()));
         setCurrActiveButton(b);
     }
+
     public void setRandomLargeButton(){
         Button b = largeButtonsAR.get((int)(Math.random()*largeButtonsAR.size()));
         setCurrActiveButton(b);
@@ -83,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        dialogHandler = new DialogHandler(this);
+
         setContentView(R.layout.activity_buttons);
 
 
@@ -388,7 +407,13 @@ public class MainActivity extends AppCompatActivity {
         largeButtonsAR.add(S83button);
         largeButtonsAR.add(S84button);
 
+        showDialog(DialogHandler.ASK_USER_NAME_ID);
     }
 
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        Dialog dialog = dialogHandler.onCreateDialog(id);
 
+        return (dialog != null) ? dialog : super.onCreateDialog(id);
+    }
 }

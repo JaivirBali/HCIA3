@@ -10,8 +10,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.graphics.*;
 import java.util.Calendar;
-import java.util.Date;
-import java.time.*;
+import java.time.Instant;
+import java.time.temporal.Temporal;
+import java.time.temporal.ChronoUnit;
 import java.util.Random;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private int mediumTrials = 0;
     private int largeTrials = 0;
     private int errorTrial = 0;
-    private Date trialStartTime;
+    private Instant trialStartTime;
     private DialogHandler dialogHandler;
 
     public int getSmallTrials(){
@@ -50,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
         currActiveButton = b;
         currActiveButton.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
     }
+
+//    public void deactivateCurrActiveButton() {
+//        currActiveButton.getBackground().clearColorFilter();
+//    }
 
     public void setRandomActiveButton(){
         //pick a random size group
@@ -81,16 +86,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void setRandomSmallButton(){
         Button b = smallButtonsAR.get( new Random().nextInt(smallButtonsAR.size()));
+//        deactivateCurrActiveButton();
         setCurrActiveButton(b);
     }
 
     public void setRandomMediumButton(){
         Button b = mediumButtonsAR.get(new Random().nextInt(mediumButtonsAR.size()));
+//        deactivateCurrActiveButton();
         setCurrActiveButton(b);
     }
 
     public void setRandomLargeButton(){
         Button b = largeButtonsAR.get(new Random().nextInt(largeButtonsAR.size()));
+//        deactivateCurrActiveButton();
         setCurrActiveButton(b);
     }
 
@@ -436,16 +444,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void startTrial(View view){
         //record start time
-        //trialStartTime = Calendar.getInstance().getTime();
+        trialStartTime = Instant.now();
         setRandomActiveButton();
-        System.out.println(trialStartTime);
+        Log.print("Start Time: " + trialStartTime);
     }
 
     public void endTrial(View view){
-        //Date trailEndTime = Calendar.getInstance().getTime();
+        Log.print("END TRIAL");
+        Long timeDifference = new Long(0);
+        Instant trialEndTime = Instant.now();
         //if button is the curr active button
         if(view.getId() == currActiveButton.getId()){
-            //Date = trailEndTime - trialStartTime;
+            if (trialStartTime != null) {
+                timeDifference = ChronoUnit.MILLIS.between(trialStartTime,trialEndTime);
+            }
+
+            Log.print("Time Difference: " + timeDifference);
 
         //else record as error trial
         }else{

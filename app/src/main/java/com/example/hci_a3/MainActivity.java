@@ -52,9 +52,10 @@ public class MainActivity extends AppCompatActivity {
         currActiveButton.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
     }
 
-//    public void deactivateCurrActiveButton() {
-//        currActiveButton.getBackground().clearColorFilter();
-//    }
+    public void deactivateCurrActiveButton() {
+        if(currActiveButton != null)
+            currActiveButton.getBackground().clearColorFilter();
+    }
 
     public void setRandomActiveButton(){
         //pick a random size group
@@ -86,19 +87,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void setRandomSmallButton(){
         Button b = smallButtonsAR.get( new Random().nextInt(smallButtonsAR.size()));
-//        deactivateCurrActiveButton();
+        deactivateCurrActiveButton();
         setCurrActiveButton(b);
     }
 
     public void setRandomMediumButton(){
         Button b = mediumButtonsAR.get(new Random().nextInt(mediumButtonsAR.size()));
-//        deactivateCurrActiveButton();
+        deactivateCurrActiveButton();
         setCurrActiveButton(b);
     }
 
     public void setRandomLargeButton(){
         Button b = largeButtonsAR.get(new Random().nextInt(largeButtonsAR.size()));
-//        deactivateCurrActiveButton();
+        deactivateCurrActiveButton();
         setCurrActiveButton(b);
     }
 
@@ -439,6 +440,7 @@ public class MainActivity extends AppCompatActivity {
         smallButtonsAR.add(S83button);
         smallButtonsAR.add(S84button);
 
+        currActiveButton = findViewById(R.id.StartButton);
         start();
     }
 
@@ -454,6 +456,7 @@ public class MainActivity extends AppCompatActivity {
         Long timeDifference = new Long(0);
         Instant trialEndTime = Instant.now();
         //if button is the curr active button
+
         if(view.getId() == currActiveButton.getId()){
             if (trialStartTime != null) {
                 timeDifference = ChronoUnit.MILLIS.between(trialStartTime,trialEndTime);
@@ -467,7 +470,7 @@ public class MainActivity extends AppCompatActivity {
             errorTrial++;
         }
         // reset the curr active button
-
+        deactivateCurrActiveButton();
     }
 
     @Override

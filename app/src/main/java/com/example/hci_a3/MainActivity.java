@@ -19,14 +19,13 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    private final int NUM_TRIALS = 20;
     private ArrayList<Button> largeButtonsAR = new ArrayList<>();
     private ArrayList<Button> mediumButtonsAR = new ArrayList<>();
     private ArrayList<Button> smallButtonsAR = new ArrayList<>();
     private Button currActiveButton = null;
-    private int smallTrials = 0;
-    private int mediumTrials = 0;
-    private int largeTrials = 0;
+    private int smallTrials = 20;
+    private int mediumTrials = 20;
+    private int largeTrials = 20;
     private int errorTrial = 0;
     private Instant trialStartTime;
     private DialogHandler dialogHandler;
@@ -62,21 +61,21 @@ public class MainActivity extends AppCompatActivity {
         int random = new Random().nextInt(3);
         switch(random){
             case 0:
-                if(smallTrials < NUM_TRIALS){
+                if(smallTrials > 0){
                     setRandomSmallButton();
                 }else {
                     setRandomActiveButton();
                 }
                 break;
             case 1:
-                if(mediumTrials < NUM_TRIALS){
+                if(mediumTrials > 0){
                     setRandomMediumButton();
                 }else {
                     setRandomActiveButton();
                 }
                 break;
             case 2:
-                if(largeTrials < NUM_TRIALS){
+                if(largeTrials > 0){
                     setRandomLargeButton();
                 }else {
                     setRandomActiveButton();
@@ -446,9 +445,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void startTrial(View view){
         //record start time
-        trialStartTime = Instant.now();
-        setRandomActiveButton();
-        Log.print("Start Time: " + trialStartTime);
+        if(largeTrials > 0 && mediumTrials > 0 && smallTrials > 0) {
+            trialStartTime = Instant.now();
+            setRandomActiveButton();
+            Log.print("Start Time: " + trialStartTime);
+        }else{
+            Log.print("WE NEED TO HANDLE COMPLETION OF THE TEST");
+        }
     }
 
     public void endTrial(View view){
@@ -461,9 +464,17 @@ public class MainActivity extends AppCompatActivity {
             if (trialStartTime != null) {
                 timeDifference = ChronoUnit.MILLIS.between(trialStartTime,trialEndTime);
             }
-
             Log.print("Time Difference: " + timeDifference);
 
+/*
+            if(view.getId() && view.getId()){
+                largeTrials--;
+            }else if(view.getId() && view.getId()){
+                mediumTrials--;
+            }else{
+                smallTrials--;
+            }
+*/
         //else record as error trial
         }else{
             Log.print("ERROR TRIAL");

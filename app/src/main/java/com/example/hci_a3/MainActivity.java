@@ -4,12 +4,13 @@ import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.TextView;
 import android.graphics.*;
-import java.math.*;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private int smallTrials = 0;
     private int mediumTrials = 0;
     private int largeTrials = 0;
+    private Date trialStartTime;
     private DialogHandler dialogHandler;
 
     public int getSmallTrials(){
@@ -428,6 +430,13 @@ public class MainActivity extends AppCompatActivity {
         smallButtonsAR.add(S84button);
 
         start();
+    }
+
+    public void startTrial(View view){
+        //record start time
+        trialStartTime = Calendar.getInstance().getTime();
+        setRandomActiveButton();
+        System.out.println(trialStartTime);
     }
 
     @Override

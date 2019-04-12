@@ -1619,6 +1619,7 @@
         android:layout_marginStart="172dp"
         android:layout_marginTop="652dp"
         android:text="Start"
+        android:onClick="startTrial"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

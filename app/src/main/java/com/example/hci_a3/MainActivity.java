@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.reset:
+                reStart();
                 return true;
 
         }
@@ -407,7 +408,7 @@ public class MainActivity extends AppCompatActivity {
         largeButtonsAR.add(S83button);
         largeButtonsAR.add(S84button);
 
-        showDialog(DialogHandler.ASK_USER_NAME_ID);
+        start();
     }
 
     @Override
@@ -415,5 +416,15 @@ public class MainActivity extends AppCompatActivity {
         Dialog dialog = dialogHandler.onCreateDialog(id);
 
         return (dialog != null) ? dialog : super.onCreateDialog(id);
+    }
+
+    private void start() {
+        showDialog(DialogHandler.ASK_USER_NAME_ID);
+    }
+
+    public void reStart() {
+        DataRecorder.getInstance().clear();
+        User.reset();
+        start();
     }
 }

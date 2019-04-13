@@ -23,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Button> mediumButtonsAR = new ArrayList<>();
     private ArrayList<Button> smallButtonsAR = new ArrayList<>();
     private Button currActiveButton = null;
-    private int smallTrials = 20;
-    private int mediumTrials = 20;
-    private int largeTrials = 20;
+    private int smallTrials = 10;
+    private int mediumTrials = 10;
+    private int largeTrials = 10;
     private int errorTrial = 0;
+    private int currType = -1;       //0 = small, 1 = medium, 2 = large
     private Instant trialStartTime;
     private DialogHandler dialogHandler;
 
@@ -58,26 +59,27 @@ public class MainActivity extends AppCompatActivity {
 
     public void setRandomActiveButton(){
         //pick a random size group
-        int random = new Random().nextInt(3);
-        switch(random){
+        currType = new Random().nextInt(3);
+
+        switch (currType) {
             case 0:
-                if(smallTrials > 0){
+                if (smallTrials > 0) {
                     setRandomSmallButton();
-                }else {
+                } else {
                     setRandomActiveButton();
                 }
                 break;
             case 1:
-                if(mediumTrials > 0){
+                if (mediumTrials > 0) {
                     setRandomMediumButton();
-                }else {
+                } else {
                     setRandomActiveButton();
                 }
                 break;
             case 2:
-                if(largeTrials > 0){
+                if (largeTrials > 0) {
                     setRandomLargeButton();
-                }else {
+                } else {
                     setRandomActiveButton();
                 }
                 break;
@@ -466,15 +468,17 @@ public class MainActivity extends AppCompatActivity {
             }
             Log.print("Time Difference: " + timeDifference);
 
-/*
-            if(view.getId() && view.getId()){
-                largeTrials--;
-            }else if(view.getId() && view.getId()){
-                mediumTrials--;
-            }else{
-                smallTrials--;
+            switch(currType){
+                case 0:
+                    smallTrials--;
+                    break;
+                case 1:
+                    mediumTrials--;
+                    break;
+                case 2:
+                    largeTrials--;
+                    break;
             }
-*/
         //else record as error trial
         }else{
             Log.print("ERROR TRIAL");

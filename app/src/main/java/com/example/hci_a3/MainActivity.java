@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private int currType = -1;       //0 = small, 1 = medium, 2 = large
     private Instant trialStartTime;
     private DialogHandler dialogHandler;
+    private String currMode = "Default";
 
     public int getSmallTrials(){
         return smallTrials;
@@ -115,13 +116,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.defaultMode:
+                currMode = "Default";
                 return true;
-            case R.id.pinchToZoom:
-                return true;
-
             case R.id.tapTap:
+                currMode = "TapTap";
                 return true;
-
             case R.id.reset:
                 reStart();
                 return true;
@@ -471,15 +470,15 @@ public class MainActivity extends AppCompatActivity {
             switch(currType){
                 case 0:
                     smallTrials--;
-                    DataRecorder.getInstance().recordRaw((String.format("small - %d", timeDifference)));
+                    DataRecorder.getInstance().recordRaw((String.format("(%s) small - %d", currMode, timeDifference)));
                     break;
                 case 1:
                     mediumTrials--;
-                    DataRecorder.getInstance().recordRaw((String.format("medium - %d", timeDifference)));
+                    DataRecorder.getInstance().recordRaw((String.format("(%s) medium - %d", currMode, timeDifference)));
                     break;
                 case 2:
                     largeTrials--;
-                    DataRecorder.getInstance().recordRaw((String.format("large - %d", timeDifference)));
+                    DataRecorder.getInstance().recordRaw((String.format("(%s) large - %d", currMode, timeDifference)));
                     break;
             }
         //else record as error trial
@@ -488,13 +487,13 @@ public class MainActivity extends AppCompatActivity {
 
             switch(currType) {
                 case 0:
-                    DataRecorder.getInstance().recordRaw("small - ERROR");
+                    DataRecorder.getInstance().recordRaw(String.format("(%s) small - ERROR", currMode));
                     break;
                 case 1:
-                    DataRecorder.getInstance().recordRaw("medium - ERROR");
+                    DataRecorder.getInstance().recordRaw(String.format("(%s) medium - ERROR", currMode));
                     break;
                 case 2:
-                    DataRecorder.getInstance().recordRaw("large - ERROR");
+                    DataRecorder.getInstance().recordRaw(String.format("(%s) large - ERROR", currMode));
                     break;
             }
         }

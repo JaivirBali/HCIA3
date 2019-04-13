@@ -6,10 +6,6 @@
         app:showAsAction="never"
         android:title="Default Mode" />
     <item
-        android:id="@+id/pinchToZoom"
-        app:showAsAction="never"
-        android:title="Pinch-to-Zoom Mode" />
-    <item
         android:id="@+id/tapTap"
         app:showAsAction="never"
         android:title="Tap Tap Mode" />

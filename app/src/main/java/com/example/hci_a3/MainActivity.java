@@ -467,23 +467,36 @@ public class MainActivity extends AppCompatActivity {
             if (trialStartTime != null) {
                 timeDifference = ChronoUnit.MILLIS.between(trialStartTime,trialEndTime);
             }
-            Log.print("Time Difference: " + timeDifference);
 
             switch(currType){
                 case 0:
                     smallTrials--;
+                    DataRecorder.getInstance().recordRaw((String.format("small - %d", timeDifference)));
                     break;
                 case 1:
                     mediumTrials--;
+                    DataRecorder.getInstance().recordRaw((String.format("medium - %d", timeDifference)));
                     break;
                 case 2:
                     largeTrials--;
+                    DataRecorder.getInstance().recordRaw((String.format("large - %d", timeDifference)));
                     break;
             }
         //else record as error trial
         }else{
-            Log.print("ERROR TRIAL");
             errorTrial++;
+
+            switch(currType) {
+                case 0:
+                    DataRecorder.getInstance().recordRaw("small - ERROR");
+                    break;
+                case 1:
+                    DataRecorder.getInstance().recordRaw("medium - ERROR");
+                    break;
+                case 2:
+                    DataRecorder.getInstance().recordRaw("large - ERROR");
+                    break;
+            }
         }
         // reset the curr active button
         deactivateCurrActiveButton();

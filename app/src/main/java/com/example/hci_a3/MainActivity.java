@@ -470,15 +470,15 @@ public class MainActivity extends AppCompatActivity {
             switch(currType){
                 case 0:
                     smallTrials--;
-                    DataRecorder.getInstance().recordRaw((String.format("(%s) small - %d", currMode, timeDifference)));
+                    DataRecorder.getInstance().recordRaw((String.format("%s - small - %d", currMode, timeDifference)));
                     break;
                 case 1:
                     mediumTrials--;
-                    DataRecorder.getInstance().recordRaw((String.format("(%s) medium - %d", currMode, timeDifference)));
+                    DataRecorder.getInstance().recordRaw((String.format("%s - medium - %d", currMode, timeDifference)));
                     break;
                 case 2:
                     largeTrials--;
-                    DataRecorder.getInstance().recordRaw((String.format("(%s) large - %d", currMode, timeDifference)));
+                    DataRecorder.getInstance().recordRaw((String.format("%s - large - %d", currMode, timeDifference)));
                     break;
             }
         //else record as error trial
@@ -487,13 +487,13 @@ public class MainActivity extends AppCompatActivity {
 
             switch(currType) {
                 case 0:
-                    DataRecorder.getInstance().recordRaw(String.format("(%s) small - ERROR", currMode));
+                    DataRecorder.getInstance().recordRaw(String.format("%s - small - ERROR", currMode));
                     break;
                 case 1:
-                    DataRecorder.getInstance().recordRaw(String.format("(%s) medium - ERROR", currMode));
+                    DataRecorder.getInstance().recordRaw(String.format("%s - medium - ERROR", currMode));
                     break;
                 case 2:
-                    DataRecorder.getInstance().recordRaw(String.format("(%s) large - ERROR", currMode));
+                    DataRecorder.getInstance().recordRaw(String.format("%s - large - ERROR", currMode));
                     break;
             }
         }

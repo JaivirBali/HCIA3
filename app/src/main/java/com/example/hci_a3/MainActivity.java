@@ -447,12 +447,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void startTrial(View view){
         //record start time
-        if(largeTrials > 0 && mediumTrials > 0 && smallTrials > 0) {
+        if(largeTrials > 0 || mediumTrials > 0 || smallTrials > 0) {
             trialStartTime = Instant.now();
             setRandomActiveButton();
             Log.print("Start Time: " + trialStartTime);
         }else{
             Log.print("WE NEED TO HANDLE COMPLETION OF THE TEST");
+            showDialog(DialogHandler.DONE_DIALOG_ID);
         }
     }
 
@@ -502,6 +503,11 @@ public class MainActivity extends AppCompatActivity {
     public void reStart() {
         DataRecorder.getInstance().clear();
         User.reset();
+        smallTrials = mediumTrials = largeTrials = 10;
+        errorTrial = 0;
+        currType = -1;
+        deactivateCurrActiveButton();
+        currActiveButton = null;
         start();
     }
 }

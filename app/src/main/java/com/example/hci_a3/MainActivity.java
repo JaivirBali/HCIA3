@@ -513,8 +513,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void reStart() {
-        DataRecorder.getInstance().clear();
         User.reset();
+        DataRecorder.getInstance().clear();
         smallTrials = mediumTrials = largeTrials = 10;
         errorTrial = 0;
         currType = -1;

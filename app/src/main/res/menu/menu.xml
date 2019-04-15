@@ -8,7 +8,7 @@
     <item
         android:id="@+id/tapTap"
         app:showAsAction="never"
-        android:title="Tap Tap Mode" />
+        android:title="Triple Tap Mode" />
     <item
         android:id="@+id/reset"
         app:showAsAction="never"
